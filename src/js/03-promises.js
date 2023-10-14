@@ -1,4 +1,5 @@
 import Notiflix from 'notiflix';
+import throttle from 'lodash.throttle';
 
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
